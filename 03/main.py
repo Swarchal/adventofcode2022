@@ -19,7 +19,7 @@ def split(s: str) -> Tuple[str, str]:
     return (s[:midpoint], s[midpoint:])
 
 
-def get_double(s: str):
+def get_double(s: str) -> str | None:
     x, y = split(s)
     for i in x:
         if i in y:
